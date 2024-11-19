@@ -6,52 +6,59 @@ import Header from './components/Header';
 function App() {
   const projects = [
     {
-      title: "CryptoDash",
-      description: "Interactive and modern app for tracking real-time cryptocurrency information, with a sleek, mobile-friendly design.",
-      tech: ["React.js", "TypeScript", "Tailwind CSS", "Node.js", "MongoDB"],
-      image: "https://images.unsplash.com/photo-1615778976371-5de7b0319c2d?auto=format&fit=crop&q=80&w=1600",
+      title: "AirScope",
+      description: "AirScope Tracker is a web app for real-time flight tracking and live statistics.",
+      tech: ["React", "FLights API", "Tailwind CSS"],
+      image: "/airscope.png",
       link: "#"
     },
     {
-      title: "Sky Scope",
+      title: "CryptoDash",
+      description: "Interactive and modern app for tracking real-time cryptocurrency information, with a sleek, mobile-friendly design.",
+      tech: ["React.js", "TypeScript", "Tailwind CSS", "Node.js", "MongoDB"],
+      image: "/cryptodash.png",
+      link: "#"
+    },
+    {
+      title: "SkyScope",
       description: "Web app to explore real-time weather data, with an intuitive interface and interactive features.",
       tech: ["React", "OpenWeather API", "Tailwind CSS"],
-      image: "https://images.unsplash.com/photo-1518085564515-699aed7e53fa?auto=format&fit=crop&q=80&w=1600",
+      image: "/skyscope.png",
       link: "https://skyscope360.netlify.app/"
     },
     {
       title: "SignaRead PDF",
       description: "An intuitive mobile app for reading, annotating, and signing PDFs directly from your phone.",
       tech: ["Flutter"],
-      image: "https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?auto=format&fit=crop&q=80&w=1600",
+      image: "/signaread.jpg",
       link: "#"
     },
     {
       title: "SportsChain",
       description: "A decentralized platform to invest in sports teams, built with Next.js, Node.js, and Polygon, using Chainlink for real-time data.",
       tech: ["Next.js", "Node.js", "Polygon", "Chainlink"],
-      image: "https://images.unsplash.com/photo-1557797899-21bcb19e8ba6?auto=format&fit=crop&q=80&w=1600",
+      image: "/sportschain.png",
       link: "https://bit.ly/4dbS5rU"
     },
     {
       title: "SecureDocs",
       description: "Decentralized app for secure document management with integrated notarization. Uses Web3Auth, CCIP, and Solidity.",
       tech: ["Solidity", "Web3Auth", "CCIP"],
-      image: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&q=80&w=1600",
+      image: "/securedocs.png",
       link: "https://bit.ly/3XIOFIC"
     },
     {
       title: "ScanGuard",
       description: "Mobile app for scanning and generating barcodes with wallet integration.",
       tech: ["Flutter"],
-      image: "https://images.unsplash.com/photo-1526378722296-810d7d6e068f?auto=format&fit=crop&q=80&w=1600",
-      link: "#"
+      image: "/scanguard.png",
+      link: "https://play.google.com/store/apps/details?id=com.monapp.scanguard&pli=1"
     },
     {
       title: "Game2048",
       description: "An interactive graphical version of the classic 2048 puzzle game, featuring smooth animations and modern features.",
       tech: ["Flutter"],
-      image: "https://images.unsplash.com/photo-1619984907449-0d51e452eb0b?auto=format&fit=crop&q=80&w=1600",
+      image: "/2048.png",
       link: "#"
     }
   ];
@@ -100,10 +107,10 @@ function App() {
         <div className="max-w-6xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-8">Contact Me</h2>
           <div className="flex justify-center gap-6">
-            <a href="https://github.com" className="text-gray-400 hover:text-white transition-colors">
+            <a href="https://github.com/QuenumGerald" className="text-gray-400 hover:text-white transition-colors">
               <Github size={28} />
             </a>
-            <a href="https://linkedin.com" className="text-gray-400 hover:text-white transition-colors">
+            <a href="https://www.linkedin.com/in/g%C3%A9rald-quenum-00b965233" className="text-gray-400 hover:text-white transition-colors">
               <Linkedin size={28} />
             </a>
             <a href="mailto:geraldquenum9@gmail.com" className="text-gray-400 hover:text-white transition-colors">
