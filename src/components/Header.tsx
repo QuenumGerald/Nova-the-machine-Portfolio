@@ -8,8 +8,8 @@ const Header = () => {
     <header className="fixed w-full bg-gray-900/95 backdrop-blur-sm z-50 border-b border-gray-800">
       <div className="max-w-6xl mx-auto px-4">
         <div className="flex items-center justify-between h-16">
-          <a href="#" className="text-xl font-bold bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
-            Portfolio
+          <a href="#" className="text-xl font-bold bg-gradient-to-r from-blue-500 to-gray-500 bg-clip-text text-transparent">
+            Gérald Quenum
           </a>
 
           {/* Desktop Navigation */}

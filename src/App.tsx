@@ -7,49 +7,49 @@ function App() {
   const projects = [
     {
       title: "CryptoDash",
-      description: "Application interactive et moderne pour suivre en temps réel les principales informations sur les cryptomonnaies, avec un design épuré et adapté aux mobiles.",
+      description: "Interactive and modern app for tracking real-time cryptocurrency information, with a sleek, mobile-friendly design.",
       tech: ["React.js", "TypeScript", "Tailwind CSS", "Node.js", "MongoDB"],
       image: "https://images.unsplash.com/photo-1615778976371-5de7b0319c2d?auto=format&fit=crop&q=80&w=1600",
       link: "#"
     },
     {
       title: "Sky Scope",
-      description: "Application Web pour explorer des données météorologiques en temps réel, avec une interface intuitive et des fonctionnalités interactives.",
+      description: "Web app to explore real-time weather data, with an intuitive interface and interactive features.",
       tech: ["React", "OpenWeather API", "Tailwind CSS"],
       image: "https://images.unsplash.com/photo-1518085564515-699aed7e53fa?auto=format&fit=crop&q=80&w=1600",
       link: "https://skyscope360.netlify.app/"
     },
     {
       title: "SignaRead PDF",
-      description: "Application intuitive pour lire, annoter et signer des documents PDF directement depuis un appareil mobile. Elle facilite la gestion et l'édition des fichiers PDF.",
+      description: "An intuitive mobile app for reading, annotating, and signing PDFs directly from your phone.",
       tech: ["Flutter"],
       image: "https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?auto=format&fit=crop&q=80&w=1600",
       link: "#"
     },
     {
       title: "SportsChain",
-      description: "Une plateforme décentralisée permettant d'investir dans des équipes sportives. Conçue avec Next.js, Node.js et Polygon, elle utilise Chainlink pour fournir des données en temps réel.",
+      description: "A decentralized platform to invest in sports teams, built with Next.js, Node.js, and Polygon, using Chainlink for real-time data.",
       tech: ["Next.js", "Node.js", "Polygon", "Chainlink"],
       image: "https://images.unsplash.com/photo-1557797899-21bcb19e8ba6?auto=format&fit=crop&q=80&w=1600",
       link: "https://bit.ly/4dbS5rU"
     },
     {
       title: "SecureDocs",
-      description: "Application décentralisée pour la gestion sécurisée de documents avec notarisation intégrée. Utilise Web3Auth, CCIP et Solidity.",
+      description: "Decentralized app for secure document management with integrated notarization. Uses Web3Auth, CCIP, and Solidity.",
       tech: ["Solidity", "Web3Auth", "CCIP"],
       image: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&q=80&w=1600",
       link: "https://bit.ly/3XIOFIC"
     },
     {
       title: "ScanGuard",
-      description: "Application mobile pour scanner et générer des codes-barres avec intégration d'un portefeuille.",
+      description: "Mobile app for scanning and generating barcodes with wallet integration.",
       tech: ["Flutter"],
       image: "https://images.unsplash.com/photo-1526378722296-810d7d6e068f?auto=format&fit=crop&q=80&w=1600",
       link: "#"
     },
     {
       title: "Game2048",
-      description: "Reprise graphique et interactive du célèbre jeu de puzzle 2048, avec des animations fluides et des fonctionnalités modernes.",
+      description: "An interactive graphical version of the classic 2048 puzzle game, featuring smooth animations and modern features.",
       tech: ["Flutter"],
       image: "https://images.unsplash.com/photo-1619984907449-0d51e452eb0b?auto=format&fit=crop&q=80&w=1600",
       link: "#"
@@ -63,18 +63,18 @@ function App() {
       {/* Hero Section */}
       <section className="px-4 py-20 md:py-32 max-w-6xl mx-auto">
         <div className="space-y-6 max-w-3xl">
-          <h1 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
-            Développeur Full Stack Blockchain
+          <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-500 to-gray-400 bg-clip-text text-transparent">
+            Full Stack Blockchain Developer
           </h1>
-          <p className="text-xl text-gray-400">
-            Transformez vos idées en solutions numériques innovantes. Avec une expertise avancée en blockchain, applications mobiles, et technologies modernes.
+          <p className="text-lg md:text-xl text-gray-400">
+            Transforming ideas into innovative digital solutions. With advanced expertise in blockchain, mobile apps, and modern technologies.
           </p>
           <div className="flex gap-4">
             <a href="#contact" className="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-lg font-medium flex items-center gap-2">
               <Mail size={20} /> Contact
             </a>
             <a href="#projects" className="bg-gray-800 hover:bg-gray-700 px-6 py-3 rounded-lg font-medium flex items-center gap-2">
-              <Code2 size={20} /> Projets
+              <Code2 size={20} /> Projects
             </a>
           </div>
         </div>
@@ -85,9 +85,9 @@ function App() {
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold mb-12 flex items-center gap-3">
             <Briefcase className="text-blue-500" />
-            Projets Récents
+            Recent Projects
           </h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {projects.map((project, index) => (
               <ProjectCard key={index} {...project} />
             ))}
@@ -98,7 +98,7 @@ function App() {
       {/* Contact Section */}
       <section id="contact" className="px-4 py-20">
         <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-8">Contactez-moi</h2>
+          <h2 className="text-3xl font-bold mb-8">Contact Me</h2>
           <div className="flex justify-center gap-6">
             <a href="https://github.com" className="text-gray-400 hover:text-white transition-colors">
               <Github size={28} />
