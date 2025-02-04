@@ -6,18 +6,60 @@ import Header from './components/Header';
 function App() {
   const projects = [
     {
-      title: "AirScope",
-      description: "AirScope Tracker is a web app for real-time flight tracking and live statistics.",
-      tech: ["React", "FLights API", "Tailwind CSS"],
-      image: "/airscope.png",
-      link: "#"
+      title: "ElizaDAO",
+      description: "A collaborative project developed with Arbitrum as part of Trailblazer AI program. An innovative AI-powered DAO with autonomous treasury management, featuring smart contract governance and automated grant distribution.",
+      tech: ["Solidity", "Web3", "AI", "Node.js"],
+      image: "/elizadao.png",
+      link: "https://github.com/QuenumGerald/eliza-dao"
     },
     {
-      title: "CryptoDash",
-      description: "Interactive and modern app for tracking real-time cryptocurrency information, with a sleek, mobile-friendly design.",
-      tech: ["React.js", "TypeScript", "Tailwind CSS", "Node.js", "MongoDB"],
-      image: "/cryptodash.png",
-      link: "#"
+      title: "Alchemix-Holyheld",
+      description: "A collaborative project developed with Alchemix and Holyheld teams, integrating self-repaying DeFi loans with card payments for seamless financial operations.",
+      tech: ["React", "TypeScript", "DeFi", "Web3"],
+      image: "/alchemix.png",
+      link: "https://alchemix-holyheld.netlify.app/"
+    },
+    {
+      title: "ICE Node Dashboard",
+      description: "A comprehensive blockchain explorer and analytics platform on Avalanche for tracking transactions, smart contracts, events, and wallet activities in real-time.",
+      tech: ["React", "Web3", "Railway", "TypeScript"],
+      image: "/icenode.png",
+      link: "https://ice-front-production.up.railway.app/"
+    },
+    {
+      title: "STONFi Insights",
+      description: "A comprehensive monitoring dashboard for STON.fi pools, providing real-time analytics and insights for DeFi liquidity providers and traders.",
+      tech: ["React", "Web3", "DeFi Analytics", "TypeScript"],
+      image: "/stonfi.png",
+      link: "https://stonfi-insights.netlify.app/"
+    },
+    {
+      title: "RumpView",
+      description: "A web dashboard for tracking token deposits, balances, and transaction history on the Rumpel platform.Built with Next.js, Ethers.js, and Chart.js for data visualization.",
+      tech: ["Next.js", "Web3", "DeFi Analytics", "TypeScript"],
+      image: "/rumpview.png",
+      link: "https://rumpview.netlify.app"
+    },
+    {
+      title: "SecureDocs",
+      description: "Decentralized app for secure document management with integrated notarization. Uses Web3Auth, CCIP, and Solidity.",
+      tech: ["Solidity", "Web3Auth", "CCIP"],
+      image: "/securedocs.png",
+      link: "https://bit.ly/3XIOFIC"
+    },
+    {
+      title: "SportsChain",
+      description: "A decentralized platform to invest in sports teams, built with Next.js, Node.js, and Polygon, using Chainlink for real-time data.",
+      tech: ["Next.js", "Node.js", "Polygon", "Chainlink"],
+      image: "/sportschain.png",
+      link: "https://bit.ly/4dbS5rU"
+    },
+    {
+      title: "ScanGuard",
+      description: "Mobile app for scanning and generating barcodes with wallet integration.",
+      tech: ["Flutter"],
+      image: "/scanguard.png",
+      link: "https://play.google.com/store/apps/details?id=com.monapp.scanguard&pli=1"
     },
     {
       title: "SkyScope",
@@ -34,33 +76,26 @@ function App() {
       link: "#"
     },
     {
-      title: "SportsChain",
-      description: "A decentralized platform to invest in sports teams, built with Next.js, Node.js, and Polygon, using Chainlink for real-time data.",
-      tech: ["Next.js", "Node.js", "Polygon", "Chainlink"],
-      image: "/sportschain.png",
-      link: "https://bit.ly/4dbS5rU"
-    },
-    {
-      title: "SecureDocs",
-      description: "Decentralized app for secure document management with integrated notarization. Uses Web3Auth, CCIP, and Solidity.",
-      tech: ["Solidity", "Web3Auth", "CCIP"],
-      image: "/securedocs.png",
-      link: "https://bit.ly/3XIOFIC"
-    },
-    {
-      title: "ScanGuard",
-      description: "Mobile app for scanning and generating barcodes with wallet integration.",
-      tech: ["Flutter"],
-      image: "/scanguard.png",
-      link: "https://play.google.com/store/apps/details?id=com.monapp.scanguard&pli=1"
-    },
-    {
       title: "Game2048",
       description: "An interactive graphical version of the classic 2048 puzzle game, featuring smooth animations and modern features.",
       tech: ["Flutter"],
       image: "/2048.png",
       link: "#"
-    }
+    },
+    {
+      title: "CryptoDash",
+      description: "Interactive and modern app for tracking real-time cryptocurrency information, with a sleek, mobile-friendly design.",
+      tech: ["React.js", "TypeScript", "Tailwind CSS", "Node.js", "MongoDB"],
+      image: "/cryptodash.png",
+      link: "#"
+    },
+    {
+      title: "AirScope",
+      description: "AirScope Tracker is a web app for real-time flight tracking and live statistics.",
+      tech: ["React", "FLights API", "Tailwind CSS"],
+      image: "/airscope.png",
+      link: "#"
+    },
   ];
 
   return (
