@@ -1,29 +1,46 @@
-from playwright.sync_api import sync_playwright, Page, expect
+from playwright.sync_api import sync_playwright, expect
 
-def run_verification(page: Page):
-    """
-    Navigates to the portfolio page and takes a screenshot to verify the refactoring.
-    """
-    # 1. Navigate to the application
-    # The dev server is usually on port 5173 for Vite
-    page.goto("http://localhost:5173")
+def run(playwright):
+    browser = playwright.chromium.launch(headless=True)
+    context = browser.new_context()
+    page = context.new_page()
 
-    # 2. Wait for a key element to be visible to ensure the page is loaded
-    # The "My Work" heading is a good candidate
-    expect(page.get_by_role("heading", name="My Work")).to_be_visible(timeout=10000)
+    try:
+        page.goto("http://localhost:5173/")
 
-    # Give some time for animations to settle
-    page.wait_for_timeout(2000)
+        # Wait for the page to load and animations to complete
+        page.wait_for_selector("h1")
+        page.wait_for_timeout(1000)  # Wait 1 second for animations
 
-    # 3. Take a screenshot of the entire page
-    page.screenshot(path="jules-scratch/verification/verification.png", full_page=True)
+        # Take a screenshot of the hero section
+        hero_section = page.locator("section").first
+        hero_section.screenshot(path="jules-scratch/verification/hero_screenshot.png")
 
-def main():
-    with sync_playwright() as p:
-        browser = p.chromium.launch(headless=True)
-        page = browser.new_page()
-        run_verification(page)
+        # Fill out the contact form
+        page.get_by_placeholder("Your Name").fill("Jules")
+        page.get_by_placeholder("Your Email").fill("jules@example.com")
+        page.get_by_placeholder("Your Message").fill("This is a test message.")
+
+        # Take a screenshot of the filled form
+        contact_form = page.locator("form")
+        contact_form.screenshot(path="jules-scratch/verification/form_filled_screenshot.png")
+
+        # Submit the form
+        page.get_by_role("button", name="Send Message").click()
+
+        # Check that the form is cleared
+        expect(page.get_by_placeholder("Your Name")).to_have_value("")
+        expect(page.get_by_placeholder("Your Email")).to_have_value("")
+        expect(page.get_by_placeholder("Your Message")).to_have_value("")
+
+        print("Verification successful!")
+
+    except Exception as e:
+        print(f"An error occurred: {e}")
+        page.screenshot(path="jules-scratch/verification/error.png")
+
+    finally:
         browser.close()
 
-if __name__ == "__main__":
-    main()
+with sync_playwright() as p:
+    run(p)
