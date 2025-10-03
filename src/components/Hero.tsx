@@ -31,7 +31,7 @@ const Hero = () => {
       >
         <motion.h1
           variants={itemVariants}
-          className="text-5xl md:text-7xl font-extrabold bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent"
+          className="text-5xl md:text-7xl font-extrabold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent"
         >
           Full Stack Blockchain Developer
         </motion.h1>
